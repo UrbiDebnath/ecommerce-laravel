@@ -1,5 +1,7 @@
-import Category from "./Category";
-import Product from "./Product";
+
+ 
+import Category from "./Category/Category";
+import ProductShowByCategory from "./ProductShowByCategory/ProductShowByCategory";
 import Slider from "./Slider";
 
 
@@ -8,7 +10,7 @@ const Home = () => {
         <div className="min-h-screen">
             <Slider></Slider>
             <Category></Category>
-            <Product></Product>
+             <ProductShowByCategory></ProductShowByCategory>
         </div>
     );
 };

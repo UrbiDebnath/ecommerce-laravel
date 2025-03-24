@@ -13,6 +13,11 @@ import Login from './Pages/Login.js';
 import Registration from './Pages/Registration.js';
 import Privacy from './Pages/Privacy.js';
 import Home from './Pages/Home/Home.js';
+import ProductByCategory from './Pages/ProDuctByCategory/ProductByCategory.js';
+import ProductByDetails from './Pages/ProductByDetails/ProductByDetails.js';
+import HelpSupport from './Pages/HelpSupport.js';
+
+
 
 const router = createBrowserRouter([
   {
@@ -34,6 +39,18 @@ const router = createBrowserRouter([
       {
         path: '/privacy',
         element: <Privacy></Privacy>
+      },
+      {
+        path:'/productByCategory',
+        element: <ProductByCategory></ProductByCategory>
+      },
+      {
+        path:'/productDetails',
+        element: <ProductByDetails></ProductByDetails>
+      },
+      {
+        path:'/helpSupport',
+        element: <HelpSupport></HelpSupport>
       }
     ]
   },

@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use App\Http\Controllers\ProductController;
+
+
 
 class ProductController extends Controller
 {
+    
        // Show the Add Product Form
     public function create() {
         return view('pages.addProduct');

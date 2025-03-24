@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ProductController;
@@ -20,6 +21,10 @@ Route::get('/addProduct', [ProductController::class, 'create'])->name('addProduc
 Route::post('/addProduct', [ProductController::class, 'store'])->name('product.store');
 // // Show Products (Blade)
 Route::get('/products', [ProductController::class, 'showProducts'])->name('products.list');
+
+Route::get('/products/category/{category}', function ($category) {
+    $products = Product::where('category', $category)->get();
+    return response()->json($products);});
 
 
 // // Fetch Products as JSON (for React)

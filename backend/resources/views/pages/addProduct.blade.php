@@ -35,9 +35,19 @@
             <label class="block font-medium">Category</label>
             <select name="category" class="w-full px-4 py-2 border rounded-md" required>
                 <option value="">Select Category</option>
-                <option value="electronics">Electronics</option>
-                <option value="fashion">Fashion</option>
-                <option value="home">Home</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Clothing & Fashion">Clothing & Fashion</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                <option value="Sports & Fitness">Sports & Fitness</option>
+                <option value="Toys & Games">Toys & Games</option>
+                <option value="Books & Stationary">Books & Stationary</option>
+                <option value="Jewelry & Watches">Jewelry & Watches</option>
+                <option value="Baby Product">Baby Product</option>
+                <option value="Mobile & Gadgets">Mobile & Gadgets</option>
+                <option value="Musical Instrument">Musical Instrument</option>
+
             </select>
         </div>
 
