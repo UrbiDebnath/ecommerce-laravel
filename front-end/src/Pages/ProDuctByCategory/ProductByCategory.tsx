@@ -42,7 +42,7 @@ const ProductByCategory = () => {
             {loading ? (
                 <p className="text-center">Loading...</p>
             ) : filteredData.length > 0 ? (
-                <div className="grid grid-cols-6 gap-4">
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
                     {filteredData.map((product) => (
                         <div
                             key={product.id}

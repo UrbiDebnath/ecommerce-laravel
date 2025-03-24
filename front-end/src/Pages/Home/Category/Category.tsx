@@ -19,7 +19,7 @@ const Category = () => {
     return (
         <div className='mx-5 md:mx-20 py-10'>
             <h2 className='font-bold text-2xl mb-5'>Category</h2>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5'>
+            <div className='grid  sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-5'>
                 {categories.map(category => (
                     <div 
                         key={category.id} 
