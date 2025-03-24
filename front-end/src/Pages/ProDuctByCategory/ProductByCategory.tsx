@@ -55,8 +55,8 @@ const ProductByCategory = () => {
                                 className="w-32 h-32 object-cover mt-2"
                             />
                             <h3 className="text-lg font-semibold">{product.title}</h3>
-                            <p className="line-through text-green-500">Price: {product.price} BDT</p>
-                            <p className="font-bold">Discount Price: {product.discount_price}</p>
+                            <p className="line-through text-red-600">Price: {product.price} BDT</p>
+                            <p className="font-bold text-green-500">Discount Price: {product.discount_price}</p>
                         </div>
                     ))}
                 </div>
